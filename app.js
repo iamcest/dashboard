@@ -54,3 +54,15 @@ passport.use(strategy);
 app.use(passport.initialize());
 app.use(passport.session());
 
+// app.js
+
+// You can use this section to keep a smaller payload
+passport.serializeUser(function (user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function (user, done) {
+  done(null, user);
+});
+
+
