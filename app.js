@@ -17,7 +17,7 @@ var session = require('express-session');
 
 // config express-session
 var sess = {
-  secret: 'CHANGE THIS TO A RANDOM SECRET',
+  secret: 'iamcest-dashboard',
   cookie: {},
   resave: false,
   saveUninitialized: true
