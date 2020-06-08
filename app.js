@@ -1,6 +1,6 @@
 // app.js
-// app.js
-
+let auth0 = null;
+const fetchAuthConfig = () => fetch("/auth_config.json");
 var userInViews = require('./lib/middleware/userInViews');
 var authRouter = require('./routes/auth');
 var indexRouter = require('./routes/index');
